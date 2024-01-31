@@ -45,7 +45,7 @@ body{
     color:black;
     font-weight: 600;
     font-size: large;
-    width:80%;
+    width:calc(80% + 10px);
     border-radius: 10px;
     border-color: transparent;
 }
