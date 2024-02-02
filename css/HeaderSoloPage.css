@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik+Doodle+Shadow&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font: 500;
+    font-size: 22px;
+    user-select: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+nav>div{
+    display: flex;
+
+}
+
+header>nav>ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap:20px;
+    align-items: center;
+}
+
+header>nav>ul>li:last-child{
+    margin-left: 100px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+}
+
+
+.main__section{
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo{
+    align-content: baseline;
+    pointer-events: none;
+    font-family: 'Dancing Script';
+    font-size: 40px;
+    text-decoration: none;
+    text-shadow: 2px 2px rgba(255, 234, 8, 0.539);
+}
+
+#nav__btn{
+    border: 2px solid rgb(255, 226, 4);
+    border-radius: 10px;
+    background-color: transparent;
+    width:80px;
+    
+}
+
+#about{
+    background-color: blueviolet;
+}
+
+#experience{
+    background-color: aqua;
+}
+
+#achivement{
+    background-color: burlywood;
+}
+
+#history{
+    background-color: cadetblue;
+}
