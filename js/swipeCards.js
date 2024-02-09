@@ -10,8 +10,14 @@ prevBtn.addEventListener('click', swipeToPrev);
 var curPage = 1;
 var maxCountPage = 5;
 var animDuration = 600 //0.5s
+var animActive = 0
+
+function doAnimUnactive(){
+    animActive = 0
+}
 
 function downScaleOpacityAnim(){
+    animActive = 1
     let curCard = document.querySelector(".active")
     curCard.style.opacity = "0"
     curCard.style.transition = animDuration/1000 + 's'
@@ -22,6 +28,7 @@ function upScaleOpacityAnim(){
     let curCard = document.querySelector(".active")
     curCard.style.opacity = "1"
     curCard.style.transition = animDuration/1000 + 's'
+    setTimeout(doAnimUnactive,50)
     
 }
 
@@ -44,6 +51,11 @@ function doSwipe_prev(){
 }
 
 function swipeToNext(){
+    if(animActive){ 
+        console.log("anim is going")
+        return false;
+        
+    }
     if (curPage < maxCountPage){
         downScaleOpacityAnim();
         setTimeout(doSwipe_next,animDuration);
@@ -53,6 +65,11 @@ function swipeToNext(){
 }
 
 function swipeToPrev(){
+    if(animActive){ 
+        console.log("anim is going")
+        return false;
+        
+    }
     if (curPage > 1){
         downScaleOpacityAnim();
         setTimeout(doSwipe_prev,animDuration);
