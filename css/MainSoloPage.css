@@ -115,7 +115,7 @@
 .card-name{
     display: flex;
     font-family: 'Comfortaa', sans-serif;
-    font-size: clamp(14px, 4vw, 60px);
+    font-size: clamp(14px, 4vw, 40px);
 
     text-decoration: underline wavy 2px;
     text-wrap: nowrap;
@@ -130,7 +130,8 @@
 
 .card-description{
     border: 2px solid green;
-    
+    text-align: center;
+    align-self: center;
 }
 
 .card__move{
