@@ -115,8 +115,11 @@
 .card-name{
     display: flex;
     font-family: 'Comfortaa', sans-serif;
-    font-size: clamp(1rem, 4vw, 3rem);
+    font-size: clamp(14px, 4vw, 60px);
+
     text-decoration: underline wavy 2px;
+    text-wrap: nowrap;
+    text-align: center;
     text-underline-offset: 5vh;
     border: 2px solid green;
     height: 100%;
