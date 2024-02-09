@@ -131,11 +131,22 @@
 }
 
 .card__move{
-    height:80%;
+    height: 10%;
+    width: 10%;
     background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: 0;
 }
 
+#btn__prev__card{
+    background-image: url(../src/arrowLeft.svg);
+}
 
+#btn__next__card{
+    background-image: url(../src/arrowRight.svg);
+}
 
 
 
