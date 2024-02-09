@@ -142,6 +142,11 @@
     background-repeat: no-repeat;
     background-position: 50%;
     border: 0;
+    transition: 1s;
+}
+
+.card__move:hover{
+    scale: 1.2;
 }
 
 #btn__prev__card{
