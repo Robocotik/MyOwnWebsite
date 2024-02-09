@@ -2,16 +2,21 @@
     background-color: var(--main-dark-color);
     height: 100vh;
     width: 100vw;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding-inline: 5%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .topic__section{
     display: flex;
     justify-content: center;
-    text-decoration: underline;
-    font-family: 'Comfortaa', sans-serif;
-
+    font-size: clamp(18px,8vw,50px);
+    font-family: 'Dancing Script', sans-serif;
+    /* border: 2px solid red; */
+    min-height: 20vh;
+    align-items: center;
 }
 
 .text-outline {
@@ -24,6 +29,10 @@
 
 .text-shadowing{
     text-shadow: var(--main-yellow-color) 1px 0 10px;
+}
+
+.box-shadowing{
+    box-shadow: var(--main-yellow-color) 0px 0px 20px;
 }
 
 #myPhoto{
@@ -42,13 +51,13 @@
     border-radius: 10px;
 } */
 
-.circle{
+/* .circle{
     width: 200px;
     height: 200px;
     background: teal;
     -webkit-clip-path: circle(30% at 50% 50%);
             clip-path: circle(30% at 50% 50%);
-}
+} */
 
 .grid-wrapper {
     height: 100%;
@@ -89,7 +98,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    width:80%;
+    width:100%;
     height: 100%;
 }
 
@@ -98,13 +107,14 @@
     display: none;
     width: 100%;
     height: 90%;
-    border: 2px solid rgb(162, 255, 56);
+    border: 2px solid var(--main-yellow-color-capacity-75);
     overflow-x: hidden;
     border-radius: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
     justify-content: center;
     padding:5% 10%;
+   
     
 }
 
@@ -114,22 +124,24 @@
 
 .card-name{
     display: flex;
+    flex-direction: column;
     font-family: 'Comfortaa', sans-serif;
     font-size: clamp(14px, 4vw, 40px);
-
-    text-decoration: underline wavy 2px;
     text-wrap: nowrap;
     text-align: center;
-    text-underline-offset: 5vh;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
+.card-name>span{
+    text-decoration: underline wavy 2px;
+    text-underline-offset: 5vh;
+}
+
 .card-description{
-    border: 2px solid green;
     text-align: center;
     align-self: center;
 }
