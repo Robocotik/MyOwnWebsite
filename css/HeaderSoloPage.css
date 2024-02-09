@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik+Doodle+Shadow&display=swap');
 
 header{
-    background-color: black;
+    background-color: var(--main-dark-color);
     width: 100%;
+    height: var(--header-height);
+    padding:0 5%;
 }
 
 nav{
@@ -31,28 +32,43 @@ header>nav>ul>li:last-child{
 }
 
 header>nav>ul>li>a{
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255,0);
     text-wrap: nowrap;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.9rem;
 }
 
-
-.main__section{
-    background-color: white;
-    height: 100vh;
-    width: 100vw;
-}
 
 .logo{
     align-content: baseline;
     pointer-events: none;
     font-family: 'Dancing Script';
-    font-size: 40px;
+    font-size: 2.7rem;
     text-decoration: none;
     text-shadow: 1px 1px var(--main-yellow-color-capacity-75);
 }
 
 #listToggler{
  display: flex;   
+}
+
+header>nav>ul>li>a:hover{
+    text-decoration-style:wavy;
+    text-decoration-color: rgb(255, 255, 255);
+    animation: text__appear 1s 0s 1 ease-out forwards;
+}
+
+
+@keyframes text__appear {
+    0%{
+        text-decoration-color: rgb(255, 255, 255,0);
+        text-underline-offset: -20px;
+    }
+    100%{
+        text-underline-offset: 5px;
+        text-decoration-color: rgb(255, 255, 255,1);
+    }
 }
 
 #nav__btn{
@@ -64,15 +80,17 @@ header>nav>ul>li>a{
 }
 
 #about{
-    background-color: black;
+    background-color: var(--main-dark-color);
 }
 
 #experience{
-    background-color: aqua;
+    background-color: var(--main-dark-color);
 }
 
 #achivement{
-    background-color: var(--main-dark-color);
+    background: url(../src/dots_grid.svg) no-repeat;
+    background-position: 10% 0;
+    background-size: 20% 20%;
 }
 
 #history{

@@ -78,8 +78,14 @@
             <div>
                 <p class="topic__section">Achivments</p>
             </div>
+            <!-- 
+                <svg viewBox="0 0 24 24" width="10%" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z" fill="#ffffff"></path> </g></svg>
+            -->
             <div class="cards">
-                <article class="card-item">
+                <button id  = "btn__prev__card" class = "card__move">
+                    влево
+                </button>
+                <article class="card-item active" id = "card1">
                     <p class="card-name"> Высшая проба</p>
                     <p class="card-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel voluptates facere
@@ -87,7 +93,7 @@
                         explicabo? Placeat, dignissimos sint. Voluptas, placeat eligendi!
                     </p>
                 </article>
-                <article class="card-item">
+                <article class="card-item" id = "card2">
                     <p class="card-name"> Высший пилотаж</p>
                     <p class="card-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel voluptates facere
@@ -95,7 +101,15 @@
                         explicabo? Placeat, dignissimos sint. Voluptas, placeat eligendi!
                     </p>
                 </article>
-                <article class="card-item">
+                <article class="card-item" id = "card3">
+                    <p class="card-name" > МОШ.<br>Инженерное направление</p>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel voluptates facere
+                        aliquam obcaecati quod exercitationem ipsum architecto quis doloribus nam, iste, veritatis
+                        explicabo? Placeat, dignissimos sint. Voluptas, placeat eligendi!
+                    </p>
+                </article>
+                <article class="card-item" id = "card4">
                     <p class="card-name"> МОШ. Инженерно-конструкторский профиль</p>
                     <p class="card-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel voluptates facere
@@ -103,6 +117,21 @@
                         explicabo? Placeat, dignissimos sint. Voluptas, placeat eligendi!
                     </p>
                 </article>
+                <article class="card-item" id = "card5">
+                    <p class="card-name"> МОШ. Инженерно-конструкторский профиль</p>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel voluptates facere
+                        aliquam obcaecati quod exercitationem ipsum architecto quis doloribus nam, iste, veritatis
+                        explicabo? Placeat, dignissimos sint. Voluptas, placeat eligendi!
+                    </p>
+                </article>
+                <button id  = "btn__next__card" class = "card__move">
+                    вправо
+                </button>
+                <!-- <button>
+                    <svg viewBox="0 0 24 24" width="10%" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" stroke-width="0.00024000000000000003"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.1795 3.26875C15.7889 2.87823 15.1558 2.87823 14.7652 3.26875L8.12078 9.91322C6.94952 11.0845 6.94916 12.9833 8.11996 14.155L14.6903 20.7304C15.0808 21.121 15.714 21.121 16.1045 20.7304C16.495 20.3399 16.495 19.7067 16.1045 19.3162L9.53246 12.7442C9.14194 12.3536 9.14194 11.7205 9.53246 11.33L16.1795 4.68297C16.57 4.29244 16.57 3.65928 16.1795 3.26875Z" fill="#ffffff"></path> </g></svg>
+                </button> -->
+                
             </div>
         </section>
 
@@ -125,6 +154,6 @@
             <li><a href="#vk">Саша Старкин</a></li>
         </ul>
     </footer>
+    <script src="../js/swipeCards.js"></script>
 </body>
-
 </html>
