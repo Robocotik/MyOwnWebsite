@@ -37,6 +37,7 @@ header>nav>ul>li>a{
     text-wrap: nowrap;
     font-family: 'Comfortaa', sans-serif;
     font-size: 0.9rem;
+
 }
 
 
@@ -56,7 +57,7 @@ header>nav>ul>li>a{
 header>nav>ul>li>a:hover{
     text-decoration-style:wavy;
     text-decoration-color: rgb(255, 255, 255);
-    animation: text__appear 1s 0s 1 ease-out forwards;
+    animation: text__appear 0.3s 0s 1 ease-out forwards;
 }
 
 @keyframes text__appear {
@@ -66,7 +67,8 @@ header>nav>ul>li>a:hover{
     }
     100%{
         text-underline-offset: 5px;
-        text-decoration-color: rgb(255, 255, 255,1);
+        text-shadow: var(--main-yellow-color) 1px 0 10px;
+        text-decoration-color: var(--main-yellow-color-capacity-75);
     }
 }
 
